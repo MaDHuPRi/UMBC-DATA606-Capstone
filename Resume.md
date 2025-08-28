@@ -62,20 +62,20 @@ _May 2025 – Jul 2025_
 
 ## Projects
 
-**Diagnosis of Dyslexia Using Machine Learning**  
+[**Diagnosis of Dyslexia Using Machine Learning**](https://github.com/MaDHuPRi/Dyslexia-Diagnosis)
 _May 2023_  
 *Tech Stack: Python, Scikit-learn, Random Forest, GridSearchCV, Tableau*
 - Engineered a Random Forest classifier with 95.2% accuracy using GridSearchCV and 10-fold cross-validation on behavioral assessment datasets.
 - Performed extensive feature engineering and class balancing (SMOTE) to address skew in dyslexia severity labels. Ensured HIPAA-compliant handling of sensitive data.
 - **Project patented** under *The Official Journal of The Patent Office - India (Application No: 202341084582 A)*.
 
-**Optical Flow for Collision Detection using Deep Learning**  
+[**Optical Flow for Collision Detection using Deep Learning**](https://github.com/MaDHuPRi/OpticalFlow_RAFT)
 _Mar 2024_  
 *Tech Stack: PyTorch, Python, YOLOv5, RAFT, OpenCV, Matplotlib*
 - Integrated RAFT optical flow with YOLOv5 for real-time collision detection on 1,100+ video streams, enabling accurate motion close to 94% and object tracking.
 - Achieved 25% speedup and 15% reduction in false positives by optimizing inference and post-processing using OpenCV and GPU acceleration.
 
-**YouTube Popularity Classification Model**  
+[**YouTube Popularity Classification Model**](https://github.com/MaDHuPRi/Youtube_Popularity_Classification)
 _Apr 2025_  
 *Tech Stack: Python, Scikit-learn, XGBoost, Random Forest, Gradient Boosting, KMeans, HDBSCAN, Hierarchical Clustering, Sentiment Analysis, Gradio*
 - Predicted view count using ensemble regressors (Random Forest, XGBoost, Gradient Boosting), followed by unsupervised clustering (KMeans, Hierarchical, HDBSCAN) to categorize popularity levels.
