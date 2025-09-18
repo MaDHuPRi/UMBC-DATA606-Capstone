@@ -30,13 +30,13 @@ The AI-Powered Meal Planner is a personalized system that helps users generate d
 ## 3. Data
 
 **Data Sources:**  
-- USDA Foods dataset (~100,000 rows), collected via API queries  
+- USDA Foods dataset (~50,000 rows), collected via API queries  
 
 **Data Size:**  
-- ~100,000 rows × 9 columns (~100 MB)  
+- ~50 MB  
 
 **Data Shape:**  
-- Rows: 100,000  
+- Rows: 50,000  
 - Columns: 9  
 
 **Time Period:**  
