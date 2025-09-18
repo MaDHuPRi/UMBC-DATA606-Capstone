@@ -63,7 +63,7 @@ The AI-Powered Meal Planner is a personalized system that helps users generate d
 - Unsupervised learning → cluster labels assigned to each food item (e.g., High Protein, Low Fat, Low Carb, etc.)  
 
 **Features / Predictors:**  
-- calories, protein_g, carbs_g, fat_g, fiber_g  
+- calories, protein_g, carbs_g, fat_g, fiber_g, along with some engineered features like calorie to protein ratio etc.  
 - **Note:** Few features were collected via API queries.  
 
 **Output:**  
