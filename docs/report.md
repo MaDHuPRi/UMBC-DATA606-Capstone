@@ -47,17 +47,17 @@ The AI-Powered Meal Planner is a personalized system that helps users generate d
 
 **Data Dictionary:**  
 
-| Column       | Type    | Definition / Notes |
-|------------|--------|------------------|
-| fdcId      | int64  | Unique ID for each food item |
-| description| object | Food name/description |
-| dataType   | object | Type of data record (Branded, SR Legacy, etc.) |
-| calories   | float64| Energy per serving (kcal) |
-| protein_g  | float64| Protein content (g) |
-| carbs_g    | float64| Carbohydrate content (g) |
-| fat_g      | float64| Fat content (g) |
-| fiber_g    | float64| Fiber content (g) |
-| sugar_g    | float64| Sugar content (not available, dropped in preprocessing) |
+| Column | Type | Non-null Count | Notes |
+|---------|------|----------------|-------|
+| `fdcId` | int64 | 20,000 | Unique ID for each food item |
+| `description` | object | 20,000 | Text name/description of the food |
+| `dataType` | object | 20,000 | Category or source label (e.g., “SR Legacy”) |
+| `calories` | float64 | 19,597 | Small number of missing values (~2%) |
+| `protein_g` | float64 | 19,834 | Few missing values (~0.8%) |
+| `carbs_g` | float64 | 19,702 | Some missing values (~1.5%) |
+| `fat_g` | float64 | 19,818 | Few missing values (~0.9%) |
+| `fiber_g` | float64 | 17,448 | Moderate missing values (~13%) |
+| `sugar_g` | float64 | 0 | Entire column missing — no usable data |
 
 **Target / Label:**  
 - Unsupervised learning → cluster labels assigned to each food item (e.g., High Protein, Low Fat, Low Carb, etc.)  
