@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+scikit-learn
+requests
+ollama
+plotly.graph_objects
+re
