@@ -113,7 +113,7 @@ To ensure the dataset was free of extreme nutrient anomalies, **Principal Compon
 
 - **Figure 1: PCA Scatter Plot (Before Outlier Removal)**  
   The first two principal components explained ~82% of the variance. A few outliers (mostly high-fat, calorie-dense items such as oils and nut pastes) appeared far from the main cluster.
-![Figure 1: PCA Scatter Plot (Before Outlier Removal)](images/pca_before.png)
+![Figure 1: PCA Scatter Plot (Before Outlier Removal)](Images/pca_before.png)
 
 These items were reviewed manually and only *unrealistic outliers* were removed, while valid high-nutrient foods were retained to preserve diversity.
 
@@ -127,15 +127,15 @@ These items were reviewed manually and only *unrealistic outliers* were removed,
 To understand the spread and variability of macronutrients, histograms and boxplots were created for each key variable.
 
 - **Figure 3: Calorie Distribution** — right-skewed, showing most foods under 400 kcal per 100 g, with a long tail representing energy-dense foods. 
-  ![Figure 3: Calorie Distribution](images/calorie_dist.png) 
+  ![Figure 3: Calorie Distribution](Images/calorie_dist.png) 
 - **Figure 4: Protein Distribution** — moderately right-skewed; average around 15–25 g/100 g.  
-  ![Figure 4: Protein Distribution](images/protein_dist.png)
+  ![Figure 4: Protein Distribution](Images/protein_dist.png)
 - **Figure 5: Fat Distribution** — wider spread, with noticeable peaks around 10 g and 30 g, representing lean vs. fatty foods.  
-  ![Figure 5: Fat Distribution](images/fat_dist.png)
+  ![Figure 5: Fat Distribution](Images/fat_dist.png)
 - **Figure 6: Carbohydrate Distribution** — multimodal pattern showing distinct clusters of low-carb vs. high-carb foods.  
-  ![Figure 6: Carbohydrate Distribution](images/carb_dist.png)
+  ![Figure 6: Carbohydrate Distribution](Images/carb_dist.png)
 - **Figure 7: Fiber Distribution** — most foods had 2–5 g/100 g; fiber-rich foods formed a smaller but distinct tail.
-  ![Figure 7: Fiber Distribution](images/fiber_dist.png)
+  ![Figure 7: Fiber Distribution](Images/fiber_dist.png)
 
 
 
@@ -153,7 +153,7 @@ A correlation heatmap was generated to quantify relationships among nutrients an
 - **Calories ↔ Carbohydrates:** moderate correlation (r ≈ 0.62).  
 - **Fiber ↔ Calories:** slightly negative (r ≈ –0.18), suggesting that high-fiber foods tend to be less calorie-dense.
 
-![Figure 8: Correlation Heatmap](images/correlation_heatmap.png)
+![Figure 8: Correlation Heatmap](Images/correlation_heatmap.png)
 These relationships validated the use of all five nutrient features for subsequent clustering.
 
 ---
@@ -206,7 +206,7 @@ A higher silhouette score indicates clearer and more distinct clusters.
 
 - **Figure 9: Silhouette Analysis – K-Means vs Agglomerative Clustering**
 
-  ![Figure 9: Silhouette Analysis – K-Means vs Agglomerative Clustering](images/silhouette_comparison.png)
+  ![Figure 9: Silhouette Analysis – K-Means vs Agglomerative Clustering](Images/silhouette_comparison.png)
 
 **Observations:**
 - Both algorithms performed reasonably at k = 2.
@@ -253,7 +253,7 @@ Each cluster represents a distinct **nutritional profile** that supports differe
 To visually validate separation among the clusters, a **PCA 2D scatter plot** was generated using the first two principal components.
 
 - **Figure 10: PCA Visualization of Final Clusters**  
-  ![Figure 10: PCA Visualization of Final Clusters](images/final_clusters_pca.png)
+  ![Figure 10: PCA Visualization of Final Clusters](Images/final_clusters_pca.png)
 
 The clusters appeared well-differentiated in nutrient space, confirming that the model effectively grouped similar food items together.
 
@@ -336,7 +336,7 @@ The app allows users to interact with the trained models seamlessly.
 The interface is designed for accessibility, enabling users with little to no technical background to benefit from an advanced AI-driven meal planner.
 
 - **Figure 11: Streamlit Application Layout**  
-  ![Figure 11: Streamlit Application Layout](images/streamlit_app.png)
+  ![Figure 11: Streamlit Application Layout](Images/streamlit_app.png)
 
 ---
 
