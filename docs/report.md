@@ -119,7 +119,7 @@ These items were reviewed manually and only *unrealistic outliers* were removed,
 
 - **Figure 2: PCA Scatter Plot (After Outlier Removal)**  
   The dataset formed tighter clusters and showed balanced distribution across major nutrient axes, confirming suitability for unsupervised clustering later in the workflow.
-![Figure 2: PCA Scatter Plot (After Outlier Removal)](images/pca_after.png)
+![Figure 2: PCA Scatter Plot (After Outlier Removal)](Images/pca_after.png)
 ---
 
 ### 3.3 Nutrient Distribution Analysis
