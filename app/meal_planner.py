@@ -33,7 +33,7 @@ st.markdown("""
 # ---------- Load dataset ----------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("/Users/madhupriyapulletikurthi/Desktop/ai_meal_planner/data/merged.csv")
+    df = pd.read_csv("data/merged.csv")
     return df
 
 df = load_data()
