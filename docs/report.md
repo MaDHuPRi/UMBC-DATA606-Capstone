@@ -82,8 +82,8 @@ Static dataset (not time-bound) focusing on latest USDA entries.
 ## 3. Exploratory Data Analysis (EDA)
 
 The Exploratory Data Analysis (EDA) phase combined insights from both notebooks:
-- **01_Data-3.ipynb** — focused on early cleaning validation, PCA-based outlier detection, and normalization checks.  
-- **02_EDA-3.ipynb** — focused on nutrient distribution, correlation, and variable relationship analysis.
+- **01_Data.ipynb** — focused on early cleaning validation, PCA-based outlier detection, and normalization checks.  
+- **02_EDA.ipynb** — focused on nutrient distribution, correlation, and variable relationship analysis.
 
 The objective was to gain an in-depth understanding of nutrient distributions, identify feature relationships, and confirm that the dataset was well-prepared for clustering-based modeling.
 
