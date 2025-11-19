@@ -4,7 +4,7 @@
 **Author:** Madhu Priya P  
 **GitHub Repo:** [https://github.com/MaDHuPRi/UMBC-DATA606-Capstone](https://github.com/MaDHuPRi/UMBC-DATA606-Capstone)  
 **LinkedIn Profile:** [https://www.linkedin.com/in/madhu-priya-pulletikurthi-917114271/](https://www.linkedin.com/in/madhu-priya-pulletikurthi-917114271/)  
-**PowerPoint Presentation:** _to be added_  
+**PowerPoint Presentation:** [https://github.com/MaDHuPRi/UMBC-DATA606-Capstone/blob/main/docs/Final_PPT.pptx] (https://github.com/MaDHuPRi/UMBC-DATA606-Capstone/blob/main/docs/Final_PPT.pptx)
 **YouTube Video:** _to be added_  
 
 ---
