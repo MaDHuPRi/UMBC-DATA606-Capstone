@@ -31,11 +31,11 @@ It combines **unsupervised learning** to cluster foods into meaningful nutrition
 ## **2. Data**
 
 ### **Data Sources**  
-- **USDA FoodData Central (FDC) API**, providing nutrient-level data for ~50 000 foods  
+- **USDA FoodData Central (FDC) API**, providing nutrient-level data for ~20 000 foods  
 
 ### **Data Size and Shape**  
 - **File Size:** ~50 MB  
-- **Rows:** ≈ 10 000 **Columns:** 9  
+- **Rows:** ≈ 20 000 **Columns:** 9  
 - Each record represents one food item and its nutritional profile.  
 
 ### **Time Period**  
