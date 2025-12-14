@@ -6,7 +6,7 @@
 **LinkedIn Profile:** [https://www.linkedin.com/in/madhu-priya-pulletikurthi-917114271/](https://www.linkedin.com/in/madhu-priya-pulletikurthi-917114271/)  
 **PowerPoint Presentation:** [Presentation](https://github.com/MaDHuPRi/UMBC-DATA606-Capstone/blob/main/docs/AI-Powered%20Personalized%20Meal%20Planner.pdf)
 
-**YouTube Video:** [Youtube Video](https://youtu.be/4XVuXcrIkaA)
+**YouTube Video:** [Youtube Video](https://youtu.be/KQdzpA9e3Tc)
 
 ---
 
