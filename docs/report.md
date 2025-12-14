@@ -2,11 +2,11 @@
 
 **Prepared for:** UMBC Data Science Master Degree Capstone by Dr. Chaojie (Jay) Wang  
 **Author:** Madhu Priya P  
-**GitHub Repo:** [Github Repo](https://github.com/MaDHuPRi/UMBC-DATA606-Capstone)  
-**LinkedIn Profile:** [Linked_In](https://www.linkedin.com/in/madhu-priya-pulletikurthi-917114271/)  
-**PowerPoint Presentation:** [] (https://github.com/MaDHuPRi/UMBC-DATA606-Capstone/blob/main/docs/Final_PPT.pptx)
+**GitHub Repo:** [https://github.com/MaDHuPRi/UMBC-DATA606-Capstone](https://github.com/MaDHuPRi/UMBC-DATA606-Capstone)  
+**LinkedIn Profile:** [https://www.linkedin.com/in/madhu-priya-pulletikurthi-917114271/](https://www.linkedin.com/in/madhu-priya-pulletikurthi-917114271/)  
+**PowerPoint Presentation:** [Presentation](https://github.com/MaDHuPRi/UMBC-DATA606-Capstone/blob/main/docs/AI-Powered%20Personalized%20Meal%20Planner.pdf)
 
-**YouTube Video:** [https://youtu.be/4XVuXcrIkaA] 
+**YouTube Video:** [Youtube Video](https://youtu.be/4XVuXcrIkaA)
 
 ---
 
@@ -28,7 +28,31 @@ It combines **unsupervised learning** to cluster foods into meaningful nutrition
 3. How can the results be presented in a clear and actionable format for users?  
 
 ---
+## System Architecture
 
+The system architecture of the **AI-Powered Personalized Meal Planner** is designed with a clear separation between backend data processing and frontend user interaction, ensuring modularity, scalability, and interpretability.
+
+### Backend: Data Processing & Intelligence
+
+The backend pipeline begins with data collection from the **USDA FoodData Central API**, which provides standardized nutritional information for a wide range of food items. This raw data undergoes a series of preprocessing steps, including data cleaning and nutrient normalization. Columns with entirely missing values are removed, partial missing values are imputed using median statistics, and caloric values are recomputed using the standard nutrition formula to ensure consistency.
+
+Following preprocessing, **macro-level features**—such as calories, protein, carbohydrates, and fat—are extracted and scaled using z-score normalization. These standardized features serve as input to an **unsupervised learning stage**, where **K-Means clustering** is applied to group foods based on nutritional similarity. The resulting clusters represent meaningful dietary categories, such as high-protein, high-carbohydrate, high-fat, and balanced foods. This clustering step is performed offline and reused across user queries.
+
+At runtime, user-specific dietary inputs are applied through a **cluster filtering module**. Instead of filtering raw data, the system filters the precomputed clusters using user preferences such as diet type and nutritional goals. This approach preserves cluster structure while enabling personalization.
+
+The filtered food subset is then used to **augment a structured prompt** passed to a **Large Language Model (LLaMA 3 via Ollama)**. The prompt includes cluster-level nutritional statistics, calorie targets, and user constraints, allowing the LLM to generate personalized meal plans that remain grounded in real nutritional data.
+
+### Frontend: Streamlit Web Application
+
+The frontend is implemented as an interactive **Streamlit web application**. Users provide inputs such as age group, calorie targets, diet type, and preferences through a simple interface. These inputs trigger the backend filtering and LLM generation pipeline.
+
+The generated outputs—including daily meal plans, recipe descriptions, grocery lists, and macro distribution summaries—are displayed directly in the application. **Plotly** is used to visualize macro distributions through a donut chart, improving interpretability and user experience.
+
+### Design Rationale
+
+This architecture separates deterministic data processing and machine learning components from generative reasoning, ensuring that the LLM operates on structured, filtered data rather than raw inputs. By combining unsupervised learning with prompt-augmented LLM generation, the system achieves both nutritional accuracy and human-like personalization while remaining scalable and extensible.
+
+---
 ## **2. Data**
 
 ### **Data Sources**  
